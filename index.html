@@ -165,7 +165,8 @@ const CURRENTLY = "technikkunsttechnikkunsttechnikkunsttechnikkunsttechnikkunstt
 const BIO_INTRO = `Hola, welcome. Here you will find all the info you need to know about my creative endeavours and all the notable projects I am involved in.`;
 const BIO_PHOTO = "bioPic.jpeg";
 const BIO_TEXT  = `Casey Calle was born on the 4th of September 2003 in Zurich. They spent their early childhood in Madrid and later moved to Zurich, where they grew up and went to the Kantonsschule Stadelhofen. After that they dove into the world of live sound, mixing, sound designing and producing. Today, besides working as a freelance sound engineer, they are studying Sound Arts at the Hochschule der Künste in Bern.`;
-
+const BIO_CV = "CVforWebsite.pdf"; // filename of your CV
+  
 const PORTFOLIO = [
   { type:"video", title:"I NEED SOME PATIENCE", date:"2026", description:"a performance, for à suivre #48. live vocals over audiovisual composition.", file:"I NEED SOME PATIENCE perf dok.mov" },
   { type:"image", title:"MiMiC", date:"2026", description:"a homemade controller, to use midi while holding a mic. 3d print and esp32-c3.", file:"MiMiCpic.jpeg" },
@@ -301,6 +302,7 @@ const CONTACT_NOTE = "...or just send me a DM on instagram=)";
       <p id="bio-intro"></p>
       ${BIO_PHOTO ? `<img id="bio-photo" src="${BIO_PHOTO}" alt="photo">` : ''}
       <p id="bio-text"></p>
+      ${BIO_CV ? `<a href="${BIO_CV}" target="_blank" class="link-btn">CV</a>` : ''}
     </div>
 
     <div class="section" id="sec-portfolio">
